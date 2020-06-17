@@ -1,0 +1,97 @@
+'A Roadmap for Programming Beginners
+'Based on PlantUML Activity Diagram: https://plantuml.com/activity-diagram-beta
+'Online editing: https://www.planttext.com/
+'Text styling: https://plantuml.com/creole
+
+@startuml
+ title A Roadmap for Programming Beginners
+
+ 'URLs:
+ !$regex = "https://regexr.com/"
+
+ !procedure $subject($name, $url="")
+  !if ($url == "")
+   :$name;
+  !else
+   :[[$url $name]];
+  !endif
+ !endprocedure
+
+ start
+ fork
+   $subject("Basic Input/Output")
+ fork again
+   :Variables;
+ fork again
+   :Basic Types;
+ fork again
+   :Naming Convention;
+ fork again
+   :Comments; 
+ endfork
+ fork
+  :Conditionals;
+ fork again
+  :Indentation;
+ endfork
+ fork
+  :Loops;
+ fork again
+  :Vectors;
+  :Matrices;
+ fork again
+  :Records (User Types);
+ endfork
+ fork
+  :Functions;
+  :Macros;
+ fork again
+  :Parameter Passing;
+ fork again
+  :Scope;
+ endfork
+ fork
+  :Recursion;
+ fork again
+  :Dynamic Allocation;
+ fork again
+  :Sorting and Searching Algorithms;
+ fork again
+  :Debug;
+ endfork
+ fork
+  :Files Input/Output;
+ fork again
+  :Exception Handling;
+ endfork
+ :Lists, Stacks, Trees, Graphs;
+ fork
+  :Abstract Data Types;
+ fork again 
+  :APIs;
+ fork again 
+  :Documentation; 
+ endfork 
+ fork 
+  :Libraries;
+ fork again 
+  :Versioning; 
+ endfork 
+ :Dictionaries;
+ :Iterators;
+ $subject("Regular Expressions", $regex)
+ fork
+  :GUI Programming;
+ fork again 
+  :Functional Programming;
+ fork again 
+  :Object Oriented Programming;
+ fork again
+  :Coroutine;
+  :Concurrent Programming;
+ fork again 
+  :Logic Programming;
+ endfork
+  :Patterns;
+ :And so on ...;
+@enduml
