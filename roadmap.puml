@@ -1,97 +1,113 @@
 'A Roadmap for Programming Beginners
 'Based on PlantUML Activity Diagram: https://plantuml.com/activity-diagram-beta
-'Online editing: https://www.planttext.com/
 'Text styling: https://plantuml.com/creole
+'For image edition and generation, access online PlantText design tool (https://www.planttext.com/) or run PlantUML from command line: java -jar plantuml.jar -tsvg roadmap.puml
 
 @startuml
- title A Roadmap for Programming Beginners
+  title A Roadmap for Programming Beginners
 
- 'URLs:
- !$regex = "https://regexr.com/"
+  !$techcolour = "#Cyan"
+  !$metacolour = "#Pink"
 
- !procedure $subject($name, $url="")
-  !if ($url == "")
-   :$name;
-  !else
-   :[[$url $name]];
-  !endif
- !endprocedure
+  !procedure $subject($name, $url="", $meta="no")
 
- start
- fork
-   $subject("Basic Input/Output")
- fork again
-   :Variables;
- fork again
-   :Basic Types;
- fork again
-   :Naming Convention;
- fork again
-   :Comments; 
- endfork
- fork
-  :Conditionals;
- fork again
-  :Indentation;
- endfork
- fork
-  :Loops;
- fork again
-  :Vectors;
-  :Matrices;
- fork again
-  :Records (User Types);
- endfork
- fork
-  :Functions;
-  :Macros;
- fork again
-  :Parameter Passing;
- fork again
-  :Scope;
- endfork
- fork
-  :Recursion;
- fork again
-  :Dynamic Allocation;
- fork again
-  :Sorting and Searching Algorithms;
- fork again
-  :Debug;
- endfork
- fork
-  :Files Input/Output;
- fork again
-  :Exception Handling;
- endfork
- :Lists, Stacks, Trees, Graphs;
- fork
-  :Abstract Data Types;
- fork again 
-  :APIs;
- fork again 
-  :Documentation; 
- endfork 
- fork 
-  :Libraries;
- fork again 
-  :Versioning; 
- endfork 
- :Dictionaries;
- :Iterators;
- $subject("Regular Expressions", $regex)
- fork
-  :GUI Programming;
- fork again 
-  :Functional Programming;
- fork again 
-  :Object Oriented Programming;
- fork again
-  :Coroutine;
-  :Concurrent Programming;
- fork again 
-  :Logic Programming;
- endfork
-  :Patterns;
- :And so on ...;
+    !$colour="#Cyan"
+    !if ($meta == "yes")
+      !$colour="#Pink"
+    !endif
+
+    !if ($url == "")
+      !$subj=$name
+    !else
+      !$temp=$url + " " + $name
+      !$subj=[[$temp]]
+    !endif
+
+    $colour:$subj;
+
+  !endprocedure
+
+  start
+  floating note right $techcolour
+    Programming Concepts
+  end note
+  floating note right $metacolour
+    General Programming Stuff
+  end note
+  fork
+    $subject("Basic Input/Output")
+  fork again
+    $subject("Variables", "https://www.khanacademy.org/computing/ap-computer-science-principles/programming-101/storing-variables/a/assigning-variables")
+  fork again
+    $subject("Basic Types")
+  fork again
+    $subject("Naming Convention")
+  fork again
+    $subject("Comments", "https://en.wikipedia.org/wiki/Comment_(computer_programming)", "yes")
+  endfork
+  fork
+    $subject("Conditionals", "https://en.wikipedia.org/wiki/Conditional_(computer_programming)")
+  fork again
+    $subject("Indentation")
+  endfork
+  fork
+    $subject("Loops")
+  fork again
+    $subject("Vectors")
+    $subject("Matrices")
+  fork again
+    $subject("Records (User Types)")
+  endfork
+  fork
+    $subject("Functions")
+    $subject("Macros")
+  fork again
+    $subject("Parameter Passing")
+  fork again
+    $subject("Scope")
+  endfork
+  fork
+    $subject("Recursion", "https://en.wikipedia.org/wiki/Recursion_(computer_science)")
+  fork again
+    $subject("Dynamic Allocation")
+  fork again
+    $subject("Sorting and Searching Algorithms")
+  fork again
+    $subject("Debug", "https://en.wikipedia.org/wiki/Debugging", "yes")
+  endfork
+  fork
+    $subject("Files Input/Output")
+  fork again
+    $subject("Exception Handling")
+  endfork
+  $subject("Lists, Stacks, Trees, Graphs")
+  fork
+    $subject("Abstract Data Types")
+  fork again 
+    $subject("APIs")
+  fork again 
+    $subject("Documentation", "https://www.doxygen.nl/index.html", "yes") 
+  endfork 
+  fork 
+    $subject("Libraries")
+  fork again 
+    $subject("Versioning", "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control", "yes")
+  endfork 
+  $subject("Dictionaries")
+  $subject("Iterators")
+  $subject("Regular Expressions", "https://regexr.com/")
+  fork
+    $subject("GUI Programming")
+  fork again 
+    $subject("Functional Programming")
+  fork again 
+    $subject("Object Oriented Programming")
+  fork again
+    $subject("Coroutine", "https://en.wikipedia.org/wiki/Coroutine")
+    $subject("Concurrent Programming")
+  fork again 
+    $subject("Logic Programming")
+  endfork
+  $subject("Patterns")
+  $subject("And so on ...")
 @enduml
