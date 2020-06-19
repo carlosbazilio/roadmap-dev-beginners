@@ -6,9 +6,11 @@
 @startuml
   title A Roadmap for Programming Beginners
 
+  'Subject color
   !$techcolour = "#Cyan"
   !$metacolour = "#Pink"
 
+  'Procedure for inserting subjects
   !procedure $subject($name, $url="", $meta="no")
 
     !$colour="#Cyan"
@@ -27,13 +29,18 @@
 
   !endprocedure
 
+  'Roadmap beginning
   start
+  
+  'Roadmap legend
   floating note right $techcolour
     Programming Concepts
   end note
   floating note right $metacolour
     General Programming Stuff
   end note
+
+  'Subjects
   fork
     $subject("Basic Input/Output")
   fork again
