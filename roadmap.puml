@@ -55,7 +55,7 @@
   fork
     $subject("Conditionals", "https://en.wikipedia.org/wiki/Conditional_(computer_programming)")
   fork again
-    $subject("Indentation", "https://developers.slashdot.org/story/20/06/20/0358229/david-heinemeier-hansson-explains-what-it-takes-to-write-great-code?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+Slashdot%2Fslashdot+%28Slashdot%29")
+    $subject("Indentation", "https://developers.slashdot.org/story/20/06/20/0358229/david-heinemeier-hansson-explains-what-it-takes-to-write-great-code")
   endfork
   fork
     $subject("Loops")
