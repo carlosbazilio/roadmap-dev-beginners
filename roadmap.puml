@@ -11,27 +11,25 @@
   !$metacolour = "#Pink"
 
   'Procedure for inserting subjects
-  !procedure $subject($name, $url="", $meta="no")
+  !unquoted procedure $subject($name, $urls="", $general="no")
 
     !$colour="#Cyan"
-    !if ($meta == "yes")
+    !if ($general == "yes")
       !$colour="#Pink"
     !endif
 
-    !if ($url == "")
-      !$subj=$name
-    !else
-      !$temp=$url + " " + $name
-      !$subj=[[$temp]]
+    !if ($urls != "")
+      !$urls="\n"+$urls
     !endif
 
-    $colour:$subj;
+    $colour:<b>$name</b>$urls;
 
   !endprocedure
+  
 
   'Roadmap beginning
   start
-  
+
   'Roadmap legend
   floating note right $techcolour
     Programming Concepts
@@ -42,79 +40,96 @@
 
   'Subjects
   fork
-    $subject("Basic Input/Output")
+    $subject(Basic Input/Output)
   fork again
-    $subject("Variables", "https://www.khanacademy.org/computing/ap-computer-science-principles/programming-101/storing-variables/a/assigning-variables")
+    $subject(Variables,\
+[[https://www.khanacademy.org/computing/ap-computer-science-principles/programming-101/storing-variables/a/assigning-variables KhanAcademy]])
   fork again
-    $subject("Basic Types")
+    $subject(Basic Types)
   fork again
-    $subject("Naming Convention")
+    $subject(Naming Convention,\
+[[https://en.wikipedia.org/wiki/Naming_convention_(programming) Wikipedia]]\n\
+[[https://devopedia.org/naming-conventions Devopedia]]\n\
+[[https://dmitripavlutin.com/coding-like-shakespeare-practical-function-naming-conventions/ Opinion]], yes)
   fork again
-    $subject("Comments", "https://en.wikipedia.org/wiki/Comment_(computer_programming)", "yes")
+    $subject(Comments,\
+[[https://en.wikipedia.org/wiki/Comment_(computer_programming) Wikipedia]], yes)
   endfork
   fork
-    $subject("Conditionals", "https://en.wikipedia.org/wiki/Conditional_(computer_programming)")
+    $subject(Conditionals,\
+[[https://en.wikipedia.org/wiki/Conditional_(computer_programming) Wikipedia]])
   fork again
-    $subject("Indentation", "https://developers.slashdot.org/story/20/06/20/0358229/david-heinemeier-hansson-explains-what-it-takes-to-write-great-code")
+    $subject(Indentation,\
+[[https://developers.slashdot.org/story/20/06/20/0358229/david-heinemeier-hansson-explains-what-it-takes-to-write-great-code Opinion]], yes)
   endfork
   fork
-    $subject("Loops")
+    $subject(Loops)
   fork again
-    $subject("Vectors")
-    $subject("Matrices")
+    $subject(Vectors)
+    $subject(Matrices)
   fork again
-    $subject("Records (User Types)")
+    $subject(Records (User Types))
   endfork
   fork
-    $subject("Functions")
-    $subject("Macros")
+    $subject(Functions)
+    $subject(Macros)
   fork again
-    $subject("Parameter Passing")
+    $subject(Parameter Passing)
   fork again
-    $subject("Scope")
+    $subject(Scope)
   endfork
   fork
-    $subject("Recursion", "https://en.wikipedia.org/wiki/Recursion_(computer_science)")
+    $subject(Recursion,\
+[[https://en.wikipedia.org/wiki/Recursion_(computer_science) Wikipedia]])
   fork again
-    $subject("Dynamic Allocation")
+    $subject(Dynamic Allocation)
   fork again
-    $subject("Sorting and Searching Algorithms")
+    $subject(Sorting and Searching Algorithms)
   fork again
-    $subject("Debug", "https://en.wikipedia.org/wiki/Debugging", "yes")
+    $subject(Debug,\
+[[https://en.wikipedia.org/wiki/Debugging Wikipedia]], yes)
   endfork
   fork
-    $subject("Files Input/Output")
+    $subject(Files Input/Output)
   fork again
-    $subject("Exception Handling")
+    $subject(Exception Handling)
   endfork
-  $subject("Lists, Stacks, Trees, Graphs")
+  $subject(Lists/Stacks/Trees/Graphs)
+  $subject(Generic Programming,\
+[[https://en.wikipedia.org/wiki/Generic_programming Wikipedia]]\n\
+[[https://stackoverflow.com/tags/generic-programming StackOverflow]])
   fork
-    $subject("Abstract Data Types")
+    $subject(Abstract Data Types)
   fork again 
-    $subject("APIs")
+    $subject(APIs)
   fork again 
-    $subject("Documentation", "https://www.doxygen.nl/index.html", "yes") 
+    $subject(Documentation,\
+[[https://www.doxygen.nl/index.html Tool]], yes) 
   endfork 
   fork 
-    $subject("Libraries")
+    $subject(Libraries)
   fork again 
-    $subject("Versioning", "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control", "yes")
+    $subject(Versioning,\
+[[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control Introduction]], yes)
   endfork 
-  $subject("Dictionaries")
-  $subject("Iterators")
-  $subject("Regular Expressions", "https://regexr.com/")
+  $subject(Dictionaries)
+  $subject(Iterators)
+  $subject(Regular Expressions,\
+[[https://en.wikipedia.org/wiki/Regular_expression Wikipedia]]\n\
+[[https://regexr.com/ Playground]])
   fork
-    $subject("GUI Programming")
+    $subject(GUI Programming)
   fork again 
-    $subject("Functional Programming")
+    $subject(Functional Programming)
   fork again 
-    $subject("Object Oriented Programming")
+    $subject(Object Oriented Programming)
   fork again
-    $subject("Coroutine", "https://en.wikipedia.org/wiki/Coroutine")
-    $subject("Concurrent Programming")
+    $subject(Coroutine,\
+[[https://en.wikipedia.org/wiki/Coroutine Wikipedia]])
+    $subject(Concurrent Programming)
   fork again 
-    $subject("Logic Programming")
+    $subject(Logic Programming)
   endfork
-  $subject("Patterns")
-  $subject("And so on ...")
+  $subject(Patterns)
+  $subject(And so on ...)
 @enduml
