@@ -39,11 +39,13 @@
   end note
 
   'Subjects
+  $subject(Algorithms,\
+[[https://www.khanacademy.org/computing/computer-science/algorithms#intro-to-algorithms Khan Academy]])
   fork
     $subject(Basic Input/Output)
   fork again
     $subject(Variables,\
-[[https://www.khanacademy.org/computing/ap-computer-science-principles/programming-101/storing-variables/a/assigning-variables KhanAcademy]])
+[[https://www.khanacademy.org/computing/ap-computer-science-principles/programming-101/storing-variables/a/assigning-variables Khan Academy]])
   fork again
     $subject(Basic Types)
   fork again
@@ -71,16 +73,21 @@
     $subject(Records (User Types))
   endfork
   fork
-    $subject(Functions)
+    $subject(Functions,\
+[[https://computersciencewiki.org/index.php/Functions CS Wiki]]\n\
+[[https://eloquentjavascript.net/03_functions.html JS Book]])
     $subject(Macros)
   fork again
     $subject(Parameter Passing)
   fork again
-    $subject(Scope)
+    $subject(Scope,\
+[[https://en.wikipedia.org/wiki/Scope_(computer_science) Wikipedia]]\n\
+[[https://en.wikiversity.org/wiki/Introduction_to_Programming/Scope Wikiversity]])
   endfork
   fork
     $subject(Recursion,\
-[[https://en.wikipedia.org/wiki/Recursion_(computer_science) Wikipedia]])
+[[https://en.wikipedia.org/wiki/Recursion_(computer_science) Wikipedia]]\n\
+[[https://www.khanacademy.org/computing/computer-science/algorithms#recursive-algorithms Khan Academy]])
   fork again
     $subject(Dynamic Allocation)
   fork again
@@ -112,15 +119,19 @@
     $subject(Versioning,\
 [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control Introduction]], yes)
   endfork 
-  $subject(Dictionaries)
+  $subject(Dictionaries,\
+[[https://en.wikipedia.org/wiki/Associative_array Wikipedia]]\n\
+[[https://en.wikibooks.org/wiki/A-level_Computing/AQA/Paper_1/Fundamentals_of_data_structures/Dictionaries Wiki Book]])
   $subject(Iterators)
   $subject(Regular Expressions,\
 [[https://en.wikipedia.org/wiki/Regular_expression Wikipedia]]\n\
-[[https://regexr.com/ Playground]])
+[[https://regexr.com/ Playground]]\n\
+[[https://regex101.com/ Playground2]])
   fork
     $subject(GUI Programming)
   fork again 
-    $subject(Functional Programming)
+    $subject(Functional Programming,\
+[[http://learnyouahaskell.com/ Haskell Book]])
   fork again 
     $subject(Object Oriented Programming)
   fork again
