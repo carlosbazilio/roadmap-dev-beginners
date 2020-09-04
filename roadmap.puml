@@ -47,7 +47,10 @@
     $subject(Variables,\
 [[https://www.khanacademy.org/computing/ap-computer-science-principles/programming-101/storing-variables/a/assigning-variables Khan Academy]])
   fork again
-    $subject(Basic Types)
+    $subject(Basic Types,\
+[[https://en.wikipedia.org/wiki/Data_type Wikipedia]]\n\
+[[https://www.tutorialspoint.com/computer_programming/computer_programming_data_types.htm TutorialsPoint]]\n\
+[[https://en.wikiversity.org/wiki/Types_and_variables Wikiversity]])
   fork again
     $subject(Naming Convention,\
 [[https://en.wikipedia.org/wiki/Naming_convention_(programming) Wikipedia]]\n\
@@ -65,7 +68,8 @@
 [[https://developers.slashdot.org/story/20/06/20/0358229/david-heinemeier-hansson-explains-what-it-takes-to-write-great-code Opinion]], yes)
   endfork
   fork
-    $subject(Loops)
+    $subject(Loops,\
+[[https://www.tutorialspoint.com/computer_programming/computer_programming_loops.htm TutorialsPoint]])
   fork again
     $subject(Vectors)
     $subject(Matrices)
@@ -125,6 +129,7 @@
   $subject(Iterators)
   $subject(Regular Expressions,\
 [[https://en.wikipedia.org/wiki/Regular_expression Wikipedia]]\n\
+[[https://eloquentjavascript.net/09_regexp.html eloquentjavascript]]\n\
 [[https://regexr.com/ Playground]]\n\
 [[https://regex101.com/ Playground2]])
   fork
