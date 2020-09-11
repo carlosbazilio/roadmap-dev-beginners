@@ -71,10 +71,11 @@
     $subject(Loops,\
 [[https://www.tutorialspoint.com/computer_programming/computer_programming_loops.htm TutorialsPoint]])
   fork again
-    $subject(Vectors)
+    $subject(Arrays,\
+[[https://en.wikipedia.org/wiki/Array_programming Wikipedia]])
     $subject(Matrices)
   fork again
-    $subject(Records (User Types))
+    $subject(User Defined Data Type)
   endfork
   fork
     $subject(Functions,\
@@ -95,7 +96,8 @@
   fork again
     $subject(Dynamic Allocation)
   fork again
-    $subject(Sorting and Searching Algorithms)
+    $subject(Sorting and Searching Algorithms,\
+[[https://www.khanacademy.org/computing/computer-science/algorithms/sorting-algorithms/a/sorting Khan Academy]])
   fork again
     $subject(Debug,\
 [[https://en.wikipedia.org/wiki/Debugging Wikipedia]], yes)
@@ -103,14 +105,16 @@
   fork
     $subject(Files Input/Output)
   fork again
-    $subject(Exception Handling)
+    $subject(Exception Handling,\
+[[https://en.wikipedia.org/wiki/Exception_handling Wikipedia]])
   endfork
   $subject(Lists/Stacks/Trees/Graphs)
   $subject(Generic Programming,\
 [[https://en.wikipedia.org/wiki/Generic_programming Wikipedia]]\n\
 [[https://stackoverflow.com/tags/generic-programming StackOverflow]])
   fork
-    $subject(Abstract Data Types)
+    $subject(Abstract Data Types,\
+[[https://en.wikipedia.org/wiki/Data_type#Abstract_data_types Wikipedia]])
   fork again 
     $subject(APIs)
   fork again 
@@ -118,7 +122,9 @@
 [[https://www.doxygen.nl/index.html Tool]], yes) 
   endfork 
   fork 
-    $subject(Libraries)
+    $subject(Libraries,\
+[[https://en.wikipedia.org/wiki/Library_(computing) Wikipedia]]\n\
+[[https://devopedia.org/standard-library Devopedia]])
   fork again 
     $subject(Versioning,\
 [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control Introduction]], yes)
@@ -141,11 +147,15 @@
     $subject(Object Oriented Programming)
   fork again
     $subject(Coroutine,\
-[[https://en.wikipedia.org/wiki/Coroutine Wikipedia]])
+[[https://en.wikipedia.org/wiki/Coroutine Wikipedia]]\n\
+[[https://www.lua.org/pil/9.html Lua Book]])
     $subject(Concurrent Programming)
   fork again 
     $subject(Logic Programming)
+  fork again 
+    $subject(Network Programming)
   endfork
   $subject(Patterns)
+  $subject(Frameworks)
   $subject(And so on ...)
 @enduml
