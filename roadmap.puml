@@ -42,7 +42,8 @@
   $subject(Algorithms,\
 [[https://www.khanacademy.org/computing/computer-science/algorithms#intro-to-algorithms Khan Academy]])
   fork
-    $subject(Basic Input/Output)
+    $subject(Basic Input/Output,\
+[[https://codelikethis.com/lessons/javascript/input-and-output Code like this]])
   fork again
     $subject(Variables,\
 [[https://www.khanacademy.org/computing/ap-computer-science-principles/programming-101/storing-variables/a/assigning-variables Khan Academy]])
@@ -72,7 +73,8 @@
 [[https://www.tutorialspoint.com/computer_programming/computer_programming_loops.htm TutorialsPoint]])
   fork again
     $subject(Arrays,\
-[[https://en.wikipedia.org/wiki/Array_programming Wikipedia]])
+[[https://en.wikipedia.org/wiki/Array_programming Wikipedia]]\n\
+[[https://www.tutorialspoint.com/computer_programming/computer_programming_arrays.htm TutorialsPoint]])
     $subject(Matrices)
   fork again
     $subject(User Defined Data Type)
@@ -83,7 +85,8 @@
 [[https://eloquentjavascript.net/03_functions.html JS Book]])
     $subject(Macros)
   fork again
-    $subject(Parameter Passing)
+    $subject(Parameter Passing,\
+[[https://en.wikipedia.org/wiki/Parameter_(computer_programming) Wikipedia]])
   fork again
     $subject(Scope,\
 [[https://en.wikipedia.org/wiki/Scope_(computer_science) Wikipedia]]\n\
@@ -103,7 +106,8 @@
 [[https://en.wikipedia.org/wiki/Debugging Wikipedia]], yes)
   endfork
   fork
-    $subject(Files Input/Output)
+    $subject(Files Input/Output,\
+[[https://www.tutorialspoint.com/computer_programming/computer_programming_file_io.htm TutorialsPoint]])
   fork again
     $subject(Exception Handling,\
 [[https://en.wikipedia.org/wiki/Exception_handling Wikipedia]])
@@ -116,7 +120,8 @@
     $subject(Abstract Data Types,\
 [[https://en.wikipedia.org/wiki/Data_type#Abstract_data_types Wikipedia]])
   fork again 
-    $subject(APIs)
+    $subject(APIs,\
+[[https://en.wikipedia.org/wiki/API Wikipedia]])
   fork again 
     $subject(Documentation,\
 [[https://www.doxygen.nl/index.html Tool]], yes) 
