@@ -100,6 +100,7 @@
     $subject(Dynamic Allocation)
   fork again
     $subject(Sorting and Searching Algorithms,\
+[[https://visualgo.net/en]]\n\
 [[https://www.khanacademy.org/computing/computer-science/algorithms/sorting-algorithms/a/sorting Khan Academy]])
   fork again
     $subject(Debug,\
@@ -112,7 +113,8 @@
     $subject(Exception Handling,\
 [[https://en.wikipedia.org/wiki/Exception_handling Wikipedia]])
   endfork
-  $subject(Lists/Stacks/Trees/Graphs)
+  $subject(Lists/Stacks/Trees/Graphs,\
+[[https://visualgo.net/en]])
   $subject(Generic Programming,\
 [[https://en.wikipedia.org/wiki/Generic_programming Wikipedia]]\n\
 [[https://stackoverflow.com/tags/generic-programming StackOverflow]])
@@ -149,7 +151,8 @@
     $subject(Functional Programming,\
 [[http://learnyouahaskell.com/ Haskell Book]])
   fork again 
-    $subject(Object Oriented Programming)
+    $subject(Object Oriented Programming,\
+[[https://www.youtube.com/watch?v=oWVQEru_1M4 Video (in Portuguese)]])
   fork again
     $subject(Coroutine,\
 [[https://en.wikipedia.org/wiki/Coroutine Wikipedia]]\n\
@@ -161,6 +164,7 @@
     $subject(Network Programming)
   endfork
   $subject(Patterns)
-  $subject(Frameworks)
+  $subject(Frameworks,\
+[[http://www2.ic.uff.br/~bazilio/programandonacozinha/conceitos-avancados/frameworks.html Analogy (in Portuguese)]])
   $subject(And so on ...)
 @enduml
