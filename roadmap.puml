@@ -77,7 +77,8 @@
 [[https://www.tutorialspoint.com/computer_programming/computer_programming_arrays.htm TutorialsPoint]])
     $subject(Matrices)
   fork again
-    $subject(User Defined Data Type)
+    $subject(User Defined Data Type,\
+[[https://learnlearn.uk/alevelcs/user-defined-types/ LearnLearn]])
   endfork
   fork
     $subject(Functions,\
@@ -97,7 +98,8 @@
 [[https://en.wikipedia.org/wiki/Recursion_(computer_science) Wikipedia]]\n\
 [[https://www.khanacademy.org/computing/computer-science/algorithms#recursive-algorithms Khan Academy]])
   fork again
-    $subject(Dynamic Allocation)
+    $subject(Dynamic Allocation,\
+[[https://www.geeksforgeeks.org/what-is-dynamic-memory-allocation/ Geeks4Geeks Article]])
   fork again
     $subject(Sorting and Searching Algorithms,\
 [[https://visualgo.net/en]]\n\
@@ -123,6 +125,7 @@
 [[https://en.wikipedia.org/wiki/Data_type#Abstract_data_types Wikipedia]])
   fork again 
     $subject(APIs,\
+[[https://carlosbazilio.github.io/livros/programandonacozinha/conceitos-avancados/apis.html Analogy]]\n\
 [[https://en.wikipedia.org/wiki/API Wikipedia]])
   fork again 
     $subject(Documentation,\
@@ -139,7 +142,8 @@
   $subject(Dictionaries,\
 [[https://en.wikipedia.org/wiki/Associative_array Wikipedia]]\n\
 [[https://en.wikibooks.org/wiki/A-level_Computing/AQA/Paper_1/Fundamentals_of_data_structures/Dictionaries Wiki Book]])
-  $subject(Iterators)
+  $subject(Iterators,\
+[[https://www.alura.com.br/artigos/o-que-sao-iteradores-no-python Alura Article]])
   $subject(Regular Expressions,\
 [[https://en.wikipedia.org/wiki/Regular_expression Wikipedia]]\n\
 [[https://eloquentjavascript.net/09_regexp.html eloquentjavascript]]\n\
@@ -157,13 +161,17 @@
     $subject(Coroutine,\
 [[https://en.wikipedia.org/wiki/Coroutine Wikipedia]]\n\
 [[https://www.lua.org/pil/9.html Lua Book]])
-    $subject(Concurrent Programming)
+    $subject(Concurrent Programming,\
+[[https://thecomputersciencebook.com/book/concurrent-programming/#leanpub-auto-concurrent-programming The Comp. Science Book]])
   fork again 
-    $subject(Logic Programming)
-  fork again 
-    $subject(Network Programming)
+    $subject(Logic Programming,\
+[[https://eecs390.github.io/notes/declarative.html Michigan Course]])
+  fork again
+    $subject(Network Programming,\
+[[https://csharp-networking.com/ C# Networking Book]])
   endfork
-  $subject(Patterns)
+  $subject(Patterns,\
+[[https://refactoring.guru/design-patterns GoF Patterns]])
   $subject(Frameworks,\
 [[http://www2.ic.uff.br/~bazilio/programandonacozinha/conceitos-avancados/frameworks.html Analogy (in Portuguese)]])
   $subject(And so on ...)
