@@ -75,7 +75,8 @@
     $subject(Arrays,\
 [[https://en.wikipedia.org/wiki/Array_programming Wikipedia]]\n\
 [[https://www.tutorialspoint.com/computer_programming/computer_programming_arrays.htm TutorialsPoint]])
-    $subject(Matrices)
+    $subject(Matrices,\
+[[https://www.geeksforgeeks.org/matrix/ Geeks4Geeks]])
   fork again
     $subject(User Defined Data Type,\
 [[https://learnlearn.uk/alevelcs/user-defined-types/ LearnLearn]])
@@ -84,7 +85,8 @@
     $subject(Functions,\
 [[https://computersciencewiki.org/index.php/Functions CS Wiki]]\n\
 [[https://eloquentjavascript.net/03_functions.html JS Book]])
-    $subject(Macros)
+    $subject(Macros,\
+[[https://en.m.wikipedia.org/wiki/Macro_(computer_science) Wikipedia]])
   fork again
     $subject(Parameter Passing,\
 [[https://en.wikipedia.org/wiki/Parameter_(computer_programming) Wikipedia]])
