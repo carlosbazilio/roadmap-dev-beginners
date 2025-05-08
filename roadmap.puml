@@ -79,7 +79,7 @@
 [[https://www.geeksforgeeks.org/matrix/ Geeks4Geeks]])
   fork again
     $subject(User Defined Data Type,\
-[[https://learnlearn.uk/alevelcs/user-defined-types/ LearnLearn]])
+[[https://learnlearn.uk/alevelcs/user-defined-types/ Access 2 Learn]])
   endfork
   fork
     $subject(Functions,\
@@ -139,6 +139,7 @@
 [[https://devopedia.org/standard-library Devopedia]])
   fork again 
     $subject(Versioning,\
+[[https://access2learn.com/classwork/programming-languages/what-is-source-control/ Access 2 Learn]]\n\
 [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control Introduction]], yes)
   endfork 
   $subject(Dictionaries,\
@@ -152,8 +153,9 @@
 [[https://regexr.com/ Playground]]\n\
 [[https://regex101.com/ Playground2]])
   fork
-    $subject(GUI Programming)
-  fork again 
+    $subject(GUI Programming,\
+[[https://www.geeksforgeeks.org/python-gui-tkinter/ Geeks4Geeks Article]])
+  fork again
     $subject(Functional Programming,\
 [[http://learnyouahaskell.com/ Haskell Book]])
   fork again 
