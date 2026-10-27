@@ -4,6 +4,10 @@
 'For image edition and generation, access online PlantText design tool (https://www.planttext.com/) or run PlantUML from command line: java -jar plantuml.jar -tsvg roadmap.puml
 
 @startuml
+
+  'Configura todos os links do SVG para abrir em uma nova aba
+  skinparam svgLinkTarget _blank
+
   title A Roadmap for Programming Beginners
 
   'Subject color
