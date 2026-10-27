@@ -22,10 +22,10 @@
       !$urls="\n"+$urls
     !endif
 
-    $colour:<b>$name</b>$urls;
+    :<b>$name</b>$urls; <<$colour>>
 
   !endprocedure
-  
+
 
   'Roadmap beginning
   start
